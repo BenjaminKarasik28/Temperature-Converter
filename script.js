@@ -28,8 +28,7 @@ const getTemp = () =>{
             let kelvin = document.querySelector('#temp').value;
             let kelvinToFahrenheit = ((kelvin *1 ) * 1.8 )- 459.67
             let kelvinToCelsius  = (kelvin * 1) - 273.15
-            document.getElementById('get').textContent = 'Your temperature from C to F is ' + kelvinToFahrenheit.toFixed(2) + ' Degrees and from C to K is ' + kelvinToCelsius.toFixed(2)  + ' Degrees' ;
-    }
+document.getElementById('get').textContent = 'Your temperature from K to F is ' + kelvinToFahrenheit.toFixed(2) + ' Degrees and from K to C is ' + kelvinToCelsius.toFixed(2)  + ' Degrees' ;    }
 
 }
 
