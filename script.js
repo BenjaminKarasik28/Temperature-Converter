@@ -3,7 +3,8 @@ const getTemp = () =>{
     //initializaing top variable with the select HTML tag
     let top = document.getElementById('select-from');
     
-        //checks if value of that tag is F, if it is then that means User wants farhenheit conversion
+        //checks if value of that tag is F, if it is then that means User wants fahrenheit conversion
+        //sets fahrenheit value with the value of the text from the input tag
         //there is a p element that gets textContent added to it with the values of the conversions
         if(top.value === 'F'){
             let fahrenheit = document.querySelector('#temp').value;
@@ -12,6 +13,7 @@ const getTemp = () =>{
             document.getElementById('get').textContent = 'Your temperature from F to C is ' + fahrenheitToCelsius.toFixed(2) + ' Degrees and from F to K is '  + fahrenheitToKelvin.toFixed(2)  + ' Degrees' ;
         }
         //checks if value of that tag is C, if it is then that means User wants celsius conversion
+        //sets celsius value with the value of the text from the input tag
         //there is a p element that gets textContent added to it with the values of the conversions
         else if(top.value === 'C'){
             let celsius = document.querySelector('#temp').value;
@@ -20,6 +22,7 @@ const getTemp = () =>{
             document.getElementById('get').textContent = 'Your temperature from C to F is ' + celsiusToFahrenheit.toFixed(2) + ' Degrees and from C to K is ' + celsiusToKelvin.toFixed(2)  + ' Degrees' ;
     }
         //checks if value of that tag is K, if it is then that means User wants kelvin conversion
+        //sets kelvin value with the value of the text from the input tag   
         //there is a p element that gets textContent added to it with the values of the conversions
         else if(top.value === 'K'){
             let kelvin = document.querySelector('#temp').value;
